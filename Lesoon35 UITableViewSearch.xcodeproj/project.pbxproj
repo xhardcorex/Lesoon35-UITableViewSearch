@@ -14,6 +14,8 @@
 		246DC76B1B8C934500732C98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246DC76A1B8C934500732C98 /* Images.xcassets */; };
 		246DC76E1B8C934500732C98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246DC76C1B8C934500732C98 /* LaunchScreen.xib */; };
 		246DC77A1B8C934500732C98 /* Lesoon35_UITableViewSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DC7791B8C934500732C98 /* Lesoon35_UITableViewSearchTests.m */; };
+		246DC7851B8C95F100732C98 /* NSString+Random_String.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DC7841B8C95F100732C98 /* NSString+Random_String.m */; };
+		246DC7881B8C9B9B00732C98 /* NSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DC7871B8C9B9B00732C98 /* NSSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		246DC7731B8C934500732C98 /* Lesoon35 UITableViewSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lesoon35 UITableViewSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		246DC7781B8C934500732C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246DC7791B8C934500732C98 /* Lesoon35_UITableViewSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesoon35_UITableViewSearchTests.m; sourceTree = "<group>"; };
+		246DC7831B8C95F100732C98 /* NSString+Random_String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random_String.h"; sourceTree = "<group>"; };
+		246DC7841B8C95F100732C98 /* NSString+Random_String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random_String.m"; sourceTree = "<group>"; };
+		246DC7861B8C9B9B00732C98 /* NSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSection.h; sourceTree = "<group>"; };
+		246DC7871B8C9B9B00732C98 /* NSSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 		246DC7511B8C934500732C98 = {
 			isa = PBXGroup;
 			children = (
+				246DC7861B8C9B9B00732C98 /* NSSection.h */,
+				246DC7871B8C9B9B00732C98 /* NSSection.m */,
+				246DC7831B8C95F100732C98 /* NSString+Random_String.h */,
+				246DC7841B8C95F100732C98 /* NSString+Random_String.m */,
 				246DC75C1B8C934500732C98 /* Lesoon35 UITableViewSearch */,
 				246DC7761B8C934500732C98 /* Lesoon35 UITableViewSearchTests */,
 				246DC75B1B8C934500732C98 /* Products */,
@@ -220,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				246DC7661B8C934500732C98 /* ViewController.m in Sources */,
+				246DC7851B8C95F100732C98 /* NSString+Random_String.m in Sources */,
 				246DC7631B8C934500732C98 /* AppDelegate.m in Sources */,
+				246DC7881B8C9B9B00732C98 /* NSSection.m in Sources */,
 				246DC7601B8C934500732C98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
