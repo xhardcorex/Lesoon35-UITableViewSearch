@@ -169,7 +169,7 @@
 #pragma  mark - SearchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
     
-    [searchBar setShowsCancelButton:YES animated:YES];
+    [searchBar setShowsCancelButton:YES animated:NO];
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
