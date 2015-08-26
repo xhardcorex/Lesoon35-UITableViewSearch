@@ -103,7 +103,7 @@
 }
 - (void) createArrayOfMonthes{
     
-    self.arrayOfMonthes = [[NSArray alloc]initWithObjects:@"Jan",@"Feb",@"Mar",@"Apr",@"May",@"Jun",@"Jul",@"Aug",@"Sep",@"Oct",@"Nov",@"De", nil];
+    self.arrayOfMonthes = [[NSArray alloc]initWithObjects:@"Jan",@"Feb",@"Mar",@"Apr",@"May",@"Jun",@"Jul",@"Aug",@"Sep",@"Oct",@"Nov",@"Dec", nil];
     
 }
 
