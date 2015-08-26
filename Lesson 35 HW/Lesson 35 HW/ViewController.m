@@ -87,7 +87,7 @@
             NSSortDescriptor *dateOfBirth = [NSSortDescriptor
                                       sortDescriptorWithKey:@"dateOfBirth" ascending:YES];
             
-            [tempArray sortUsingDescriptors:[NSArray arrayWithObjects:surname, name,dateOfBirth, nil]];
+            [tempArray sortUsingDescriptors:[NSArray arrayWithObjects:surname,name,dateOfBirth, nil]];
 
             
             tempArray = [NSMutableArray array];
@@ -103,7 +103,7 @@
 }
 - (void) createArrayOfMonthes{
     
-    self.arrayOfMonthes = [[NSArray alloc]initWithObjects:@"January",@"February",@"March",@"April",@"May",@"June",@"July",@"August",@"September",@"October",@"November",@"December", nil];
+    self.arrayOfMonthes = [[NSArray alloc]initWithObjects:@"Jan",@"Feb",@"Mar",@"Apr",@"May",@"Jun",@"Jul",@"Aug",@"Sep",@"Oct",@"Nov",@"Dec", nil];
     
 }
 
@@ -113,7 +113,18 @@
 }
 #pragma  mark - Data Source
 
-
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    
+    
+    NSMutableArray* array  =[NSMutableArray array];
+    
+    for (NSString* section in self.arrayOfMonthes) {
+        [array addObject:section];
+    }
+    
+    return array;
+    
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
  
@@ -155,5 +166,26 @@
     return month;
 }
 
+#pragma  mark - SearchBarDelegate
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
+    
+    [searchBar setShowsCancelButton:YES animated:YES];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    
+    [searchBar resignFirstResponder];
+    [searchBar setShowsCancelButton:YES animated:YES];
+}
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+   // NSLog(@"texDidChange: %@",searchText);
+    
+    // self.sectionsArray = [self generateSectionsFromArray:self.namesArray withFilter:self.searchBar.text];
+    //[self.tableView reloadData];
+   // [self generateSectionsInBackgroundFromArray:self.namesArray withFilter:self.searchBar.text];
+    
+    
+}
 
 @end
